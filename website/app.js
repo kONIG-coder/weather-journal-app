@@ -9,7 +9,7 @@ submitButton.addEventListener("click", handleGenerateData);
 // callback function to handle clicking generate button
 function handleGenerateData(event) {
     let d = new Date(); // Create a new date instance dynamically with JS
-    let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+    let newDate = (d.getMonth() + 1) + '/'+ d.getDate()+'/'+ d.getFullYear();
     let feeling = document.getElementById("feelings").value;
     let zip = document.getElementById('zip').value;
 
